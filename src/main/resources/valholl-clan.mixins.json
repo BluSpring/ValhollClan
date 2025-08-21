@@ -1,0 +1,18 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "xyz.bluspring.valhollclan.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [
+        "PlayerMixin"
+    ],
+    "client": [
+        "PlayerTabOverlayMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "overwrites": {
+        "requireAnnotations": true
+    }
+}

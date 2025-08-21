@@ -1,0 +1,11 @@
+{
+    "valholl.roles.target_kos": "Target (Kill on Sight)",
+    "valholl.roles.target": "Target",
+    "valholl.roles.ally": "Ally",
+    "valholl.roles.member": "Member",
+    "valholl.roles.recruiter": "Recruiter",
+    "valholl.roles.officer": "Officer",
+    "valholl.roles.coleader": "Co-Leader",
+    "valholl.roles.leader": "Leader",
+    "valholl.roles.founder": "Founder"
+}

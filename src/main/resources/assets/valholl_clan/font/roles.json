@@ -1,0 +1,71 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "minecraft:include/space"
+        },
+        {
+            "type": "bitmap",
+            "file": "valholl_clan:roles/target_kos.png",
+            "ascent": 7,
+            "height": 10,
+            "chars": ["\ue001"]
+        },
+        {
+            "type": "bitmap",
+            "file": "valholl_clan:roles/target.png",
+            "ascent": 7,
+            "height": 10,
+            "chars": ["\ue002"]
+        },
+        {
+            "type": "bitmap",
+            "file": "valholl_clan:roles/ally.png",
+            "ascent": 7,
+            "height": 10,
+            "chars": ["\ue003"]
+        },
+        {
+            "type": "bitmap",
+            "file": "valholl_clan:roles/member.png",
+            "ascent": 7,
+            "height": 10,
+            "chars": ["\ue004"]
+        },
+        {
+            "type": "bitmap",
+            "file": "valholl_clan:roles/recruiter.png",
+            "ascent": 7,
+            "height": 10,
+            "chars": ["\ue005"]
+        },
+        {
+            "type": "bitmap",
+            "file": "valholl_clan:roles/officer.png",
+            "ascent": 7,
+            "height": 10,
+            "chars": ["\ue006"]
+        },
+        {
+            "type": "bitmap",
+            "file": "valholl_clan:roles/coleader.png",
+            "ascent": 7,
+            "height": 10,
+            "chars": ["\ue007"]
+        },
+        {
+            "type": "bitmap",
+            "file": "valholl_clan:roles/leader.png",
+            "ascent": 7,
+            "height": 10,
+            "chars": ["\ue008"]
+        },
+        {
+            "type": "bitmap",
+            "file": "valholl_clan:roles/founder.png",
+            "ascent": 7,
+            "height": 10,
+            "chars": ["\ue009"]
+        }
+    ]
+}

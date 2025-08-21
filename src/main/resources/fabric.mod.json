@@ -1,0 +1,30 @@
+{
+    "schemaVersion": 1,
+    "id": "valholl-clan",
+    "version": "${version}",
+    "name": "Valhöll Clan",
+    "description": "Displays the icons of those who are in the Valhöll clan of Cubecraft.",
+    "authors": [
+        "BluSpring"
+    ],
+    "contact": {
+        "sources": "https://github.com/BluSpring/ValhollClan"
+    },
+    "license": "MIT",
+    "icon": "assets/valholl_clan/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "xyz.bluspring.valhollclan.client.ValhollClanClient"
+        ]
+    },
+    "mixins": [
+        "valholl-clan.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "fabric-language-kotlin": ">=${kotlin_loader_version}",
+        "fabric-api": "*",
+        "minecraft": ">=${minecraft_version}"
+    }
+}
