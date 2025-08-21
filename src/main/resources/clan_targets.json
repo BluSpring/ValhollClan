@@ -48,5 +48,10 @@
         "uuid": "72b31658-083b-456c-bc82-d444207a9bba",
         "name": "LLZombie2",
         "type": "target_kos"
+    },
+    {
+        "uuid": "74879e0d-9533-4125-88d6-8b61f27eb946",
+        "name": "Sanyutey_Enraku",
+        "type": "target_kos"
     }
 ]
