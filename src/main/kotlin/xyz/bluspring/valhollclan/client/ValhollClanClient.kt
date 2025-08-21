@@ -7,20 +7,16 @@ import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientWorldEvents
-import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents
-import net.fabricmc.loader.api.FabricLoader
 import net.minecraft.ChatFormatting
 import net.minecraft.network.chat.Component
 import net.minecraft.network.chat.ComponentUtils
-import net.minecraft.network.chat.HoverEvent
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.entity.player.Player
 import org.slf4j.LoggerFactory
 import xyz.bluspring.valhollclan.client.clan.ClanPlayerInfo
 import xyz.bluspring.valhollclan.client.clan.ClanRole
 import java.net.URI
-import java.util.Properties
-import java.util.UUID
+import java.util.*
 
 class ValhollClanClient : ClientModInitializer {
     override fun onInitializeClient() {
@@ -72,6 +68,13 @@ class ValhollClanClient : ClientModInitializer {
                                     ), false)
                                 }
 
+                                1
+                            }
+                    )
+                    .then(
+                        ClientCommandManager.literal("forcerefresh")
+                            .executes {
+                                loadInfos()
                                 1
                             }
                     )
