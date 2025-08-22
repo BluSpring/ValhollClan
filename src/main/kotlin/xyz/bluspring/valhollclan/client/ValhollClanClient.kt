@@ -29,23 +29,7 @@ class ValhollClanClient : ClientModInitializer {
             val clanPlayers = world.players().filter { players.any { p -> p.uuid == it.uuid } }
 
             if (clanPlayers.isNotEmpty()) {
-                client.gui.chat.addMessage(
-                    Component.literal("Available Clan Players:")
-                        .append("\n")
-                        .append(Component.literal(" - Members: ").withStyle(ChatFormatting.BOLD, ChatFormatting.AQUA))
-                        .append(ComponentUtils.formatList(
-                            clanPlayers.filter { !it.getClanInfo()!!.role.isTarget }
-                                .map { (it.displayName ?: it.name).copy().append(getClanIcon(it.gameProfile)) },
-                            Component.literal(", ")
-                        ))
-                        .append("\n")
-                        .append(Component.literal(" - Targets: ").withStyle(ChatFormatting.BOLD, ChatFormatting.RED))
-                        .append(ComponentUtils.formatList(
-                            clanPlayers.filter { it.getClanInfo()!!.role.isTarget }
-                                .map { (it.displayName ?: it.name).copy().append(getClanIcon(it.gameProfile)) },
-                            Component.literal(", ")
-                        ))
-                )
+                client.gui.chat.addMessage(getAvailable(clanPlayers))
             }
         }
 
@@ -78,8 +62,34 @@ class ValhollClanClient : ClientModInitializer {
                                 1
                             }
                     )
+                    .then(
+                        ClientCommandManager.literal("list")
+                            .executes {
+                                val clanPlayers = it.source.world.players().filter { players.any { p -> p.uuid == it.uuid } }
+                                it.source.player.displayClientMessage(getAvailable(clanPlayers), false)
+                                1
+                            }
+                    )
             )
         }
+    }
+
+    private fun getAvailable(clanPlayers: List<Player>): Component {
+        return Component.literal("Available Clan Players:")
+            .append("\n")
+            .append(Component.literal(" - Members: ").withStyle(ChatFormatting.BOLD, ChatFormatting.AQUA))
+            .append(ComponentUtils.formatList(
+                clanPlayers.filter { !it.getClanInfo()!!.role.isTarget }
+                    .map { (it.displayName ?: it.name).copy().append(getClanIcon(it.gameProfile)) },
+                Component.literal(", ")
+            ))
+            .append("\n")
+            .append(Component.literal(" - Targets: ").withStyle(ChatFormatting.BOLD, ChatFormatting.RED))
+            .append(ComponentUtils.formatList(
+                clanPlayers.filter { it.getClanInfo()!!.role.isTarget }
+                    .map { (it.displayName ?: it.name).copy().append(getClanIcon(it.gameProfile)) },
+                Component.literal(", ")
+            ))
     }
 
     companion object {
