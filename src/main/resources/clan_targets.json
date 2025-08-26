@@ -48,5 +48,10 @@
         "uuid": "74879e0d-9533-4125-88d6-8b61f27eb946",
         "name": "Sanyutey_Enraku",
         "role": "target_kos"
+    },
+    {
+        "uuid": "e77bcc75-a6e6-412b-9f69-2acf6fd2baa0",
+        "name": "_pogou_",
+        "role": "target_kos"
     }
 ]
