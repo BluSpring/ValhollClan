@@ -2,12 +2,12 @@
     {
         "uuid": "d92128b9-462d-4e55-98df-9c5d5c395d84",
         "name": "LAGsugiTea_",
-        "role": "target_kos"
+        "role": "target"
     },
     {
         "uuid": "8d8bec0a-7f71-4e68-b373-03619f9eddb4",
         "name": "Santa_57Q",
-        "role": "target_kos"
+        "role": "target"
     },
     {
         "uuid": "6c073305-6672-42ec-b6bc-f4e25d0668b7",
@@ -17,17 +17,17 @@
     {
         "uuid": "324de904-e9b2-472b-a40d-e55cb5cbd5e8",
         "name": "arrowboyhero",
-        "role": "target_kos"
+        "role": "target"
     },
     {
         "uuid": "6a0289a6-7481-4ff3-8e67-927495799805",
         "name": "immyhoon",
-        "role": "target_kos"
+        "role": "target"
     },
     {
         "uuid": "a6d1b52d-cc0f-4a48-92de-8fe658e543d9",
         "name": "Filterdotexe",
-        "role": "target_kos"
+        "role": "target"
     },
     {
         "uuid": "8ffbaaf3-03ba-4c09-a401-3e511c1b8a91",
@@ -37,21 +37,36 @@
     {
         "uuid": "9c4e26bc-59f3-4eaa-b362-e057a8b5b0ad",
         "name": "ufghyhyhd",
-        "role": "target_kos"
+        "role": "target"
     },
     {
         "uuid": "72b31658-083b-456c-bc82-d444207a9bba",
         "name": "LLZombie2",
-        "role": "target_kos"
+        "role": "target"
     },
     {
         "uuid": "74879e0d-9533-4125-88d6-8b61f27eb946",
         "name": "Sanyutey_Enraku",
-        "role": "target_kos"
+        "role": "target"
     },
     {
         "uuid": "e77bcc75-a6e6-412b-9f69-2acf6fd2baa0",
         "name": "_pogou_",
-        "role": "target_kos"
+        "role": "target"
+    },
+    {
+        "uuid": "b8dec02b-89ab-45aa-adac-858b87a8f3d3",
+        "name": "YoungDaisuki",
+        "role": "target"
+    },
+    {
+        "uuid": "3fac450d-2393-4e54-8945-c10aad422990",
+        "name": "Valkriey",
+        "role": "target"
+    },
+    {
+        "uuid": "4851fb04-5c13-40f8-a452-248a8a1d1c1a",
+        "name": "blumpers",
+        "role": "target"
     }
 ]
