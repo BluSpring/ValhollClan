@@ -27,7 +27,7 @@
     {
         "uuid": "05a0c3ad-c03f-461b-89be-f8bdbc966317",
         "name": "loolpool",
-        "role": "officer"
+        "role": "coleader"
     },
     {
         "uuid": "170d27ae-da14-4478-afd1-1bf5c39eadd5",
@@ -253,6 +253,21 @@
     {
         "uuid": "1dbf9f04-e58e-4832-b0a4-508ac68a91a1",
         "name": "Jester1Penetrate",
+        "role": "member"
+    },
+    {
+        "uuid": "7ca1a824-aa75-4566-b288-0ceb3ed31ea0",
+        "name": "Lord_Jellyjiggly",
+        "role": "member"
+    },
+    {
+        "uuid": "829d4c49-7803-4677-96d6-80bd29afdcda",
+        "name": "sxivoun",
+        "role": "member"
+    },
+    {
+        "uuid": "b7ed39a0-2c81-4ba2-8285-8d6f1751ef82",
+        "name": "ZynWarrior",
         "role": "member"
     }
 ]
