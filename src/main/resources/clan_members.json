@@ -269,5 +269,10 @@
         "uuid": "b7ed39a0-2c81-4ba2-8285-8d6f1751ef82",
         "name": "ZynWarrior",
         "role": "member"
+    },
+    {
+        "uuid": "b056721c-7d6a-44f4-a407-9a81143c0a7e",
+        "name": "qStars",
+        "role": "recruiter"
     }
 ]
