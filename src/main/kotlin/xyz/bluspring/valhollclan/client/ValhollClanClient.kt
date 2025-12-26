@@ -10,6 +10,7 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientWorldEvents
 import net.minecraft.ChatFormatting
 import net.minecraft.network.chat.Component
 import net.minecraft.network.chat.ComponentUtils
+import net.minecraft.network.chat.FontDescription
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.entity.player.Player
 import org.slf4j.LoggerFactory
@@ -44,7 +45,7 @@ class ValhollClanClient : ClientModInitializer {
                                         .append(
                                             Component.literal("${role.iconChar}")
                                                 .withStyle {
-                                                    it.withFont(ROLES_FONT)
+                                                    it.withFont(FontDescription.Resource(ROLES_FONT))
                                                 }
                                         )
                                         .append(" - ")
@@ -142,7 +143,7 @@ class ValhollClanClient : ClientModInitializer {
                 val player = players.first { it.uuid == profile.id }
                 return Component.literal(" ${player.role.iconChar}")
                     .withStyle {
-                        it.withFont(ROLES_FONT)
+                        it.withFont(FontDescription.Resource(ROLES_FONT))
                     }
             }
 
